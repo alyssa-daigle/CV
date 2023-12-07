@@ -1,8 +1,7 @@
 ---
-name: Alyssa Daigle
-position: "Master's Student"
+surname: Alyssa Daigle
+position: "Master's Student, Microbiology"
 address: "Department of Molecular, Cellular, and Biomedical Sciences; University of New Hampshire"
-phone: 603 973 5565
 www: insert web link
 email: "alyssa.daigle@unh.edu"
 github: alyssa-daigle
@@ -24,7 +23,7 @@ sheet_url <- "https://docs.google.com/spreadsheets/d/1pBwj_E2oTeOA0wRmqS0nxHKdIJ
 
 # Research Interests 
 
-Plant-microbe interactions: duckweed as a green manure, effect of co-occurring species on green manure quality; specific interest in effect of cyanotoxins on safety of green manure
+Plant-microbe interactions; duckweed green manures; effect of genotypes and co-occurring species on green manure quality; effect of cyanotoxins on safety of green manure
 
 # Education 
 
@@ -33,14 +32,13 @@ tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Location,~ Details,
   
   "Master of Science, Microbiology", 
-  "Expected 2025", 
+  "08/2023 - Present", 
   "University of New Hampshire", 
   "Durham, New Hampshire",
-    list("Advisor: Dr. Anna O'Brien", 
-         "Research: green manure quality"),
+    list("Advisor: Dr. Anna O'Brien"),
   
 "Bachelor of Science, Environmental Conservation and Sustainability",
-"May 2023",
+"08/2019 - 05/2023",
 "University of New Hampshire",
 "Durham, New Hampshire",
   "Summa Cum Laude"
@@ -63,16 +61,21 @@ tribble(
   ~ Location,
   ~ Details,
   "Laboratory/Field Technician",
-  "2022-2023",
+  "03/2022 - 08/2023",
   "Lakes Lay Monitoring Program, University of New Hampshire",
   "Durham, New Hampshire",
-    "Water quality monitoring of NH lakes, ponds, and tributaries",
+    list("Sampled New Hampshire lakes and ponds at varying thermal depths to assess overall system health",
+         "Performed nutrient analyses (total phosphorus, soluble reactive phosphorus, total nitrogen) on water samples using oxidative digestions and spectrophotometry",
+         "Analyzed chemical and physical properties of water samples (pH, SPCD, chloride, alkalinity, turbidity, dissolved color, Chlorophyll-a, dissolved oxygen, carbon dioxide)",
+         "Wrote annual highlight reports"),
   
 "Undergraduate Researcher",
-"2021",
+"01/2021 - 05/2021",
 "Ecotoxicology Lab, University of New Hampshire",
 "Durham, New Hampshire",
-  "Researching the effect of aerosolized cyanotoxins"
+  list("Analyzed aerosolized chlorophyll, phycocyanin, and phycoerythrin pigments (cyanobacteria proxy) under varying temperature differentials using fluorometry to assess the risk of aerosolized cyanotoxins",
+       "Presented relevant findings/questions to Ecotoxicology Research Lab and poster presentation at Undergraduate Research Conference (UNH)")
+       
 ) %>%
   detailed_entries(
     with = Position,
@@ -95,11 +98,11 @@ tribble(
   ~ Institution,
   ~ Location,
   ~ Details,
-  "Germs 101 Teaching Assistant",
-  "Fall 2023",
+  "BMS 407: Germs 101 - Graduate Teaching Assistant",
+  "08/2023 - 12/2023",
   "University of New Hampshire",
   "Durham, New Hampshire",
-  "teaching assistant for class"
+  "Moderated Zoom lectures, graded students, monitored class email account"
 ) %>%
   detailed_entries(
     with = Position,
@@ -112,14 +115,8 @@ tribble(
 
 # Relevant Skills
 
+*Computational*: R/RStudio, Microsoft Suite
 
-# Education 
+*Wet Lab*: Spectrophotometry, Fluorometry, Turbidometry, Benchtop probe analysis, YSI multi-probe and flow systems measurement, Plankton towing, Tube and point lake sampling, Secchi disk measurement 
 
-<!-- # ``` {r education} -->
-<!-- # Education <- gsheet::gsheet2tbl(sheet_url, sheet="Education") %>% -->
-<!-- #   vitae::detailed_entries(what = Degree, -->
-<!-- #                           when = Year, -->
-<!-- #                           with = Institution,  -->
-<!-- #                           where = Location,  -->
-<!-- #                           why = Details) -->
-<!-- #  -->
+*Other*: Trained in Chemical Environmental Management System (CEMS), Adhere to EPA approved Quality Assurance Project Plans (QAPPs) at LLMP 
