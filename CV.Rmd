@@ -12,6 +12,7 @@ headcolor: 414141
 date: "`r format(Sys.time(), '%B %Y')`"
 output:
   vitae::awesomecv
+  
 ---
 
 ```{r setup, include=FALSE}
@@ -30,32 +31,30 @@ Plant-microbe interactions: duckweed as a green manure, effect of co-occurring s
 
 ``` {r}
 tribble(
-  ~ Degree,
-  ~ Year,
-  ~ Institution,
-  ~ Location,
-  ~ Details,
-  "Master of Science, Microbiology",
-  "Expected 2025",
-  "University of New Hampshire",
+  ~ Degree, ~ Year, ~ Institution, ~ Location,~ Details,
+  
+  "Master of Science, Microbiology", 
+  "Expected 2025", 
+  "University of New Hampshire", 
   "Durham, New Hampshire",
-"Advisor: Dr. Anna O'Brien",
+    list("Advisor: Dr. Anna O'Brien", 
+         "Research: green manure quality"),
+  
 "Bachelor of Science, Environmental Conservation and Sustainability",
 "May 2023",
 "University of New Hampshire",
 "Durham, New Hampshire",
-"Summa Cum Laude"
+  "Summa Cum Laude"
 ) %>%
-  detailed_entries(
-    what = Degree,
-    when = Year,
-    with = Institution,
-    where = Location,
-    why = Details
+  detailed_entries(what = Degree, 
+                   when = Year, 
+                   with = Institution, 
+                   where = Location, 
+                   why = Details
   )
 ```
 
-# Prior Research Experience
+# Prior Experience
 
 ```{r}
 tribble(
@@ -68,12 +67,13 @@ tribble(
   "2022-2023",
   "Lakes Lay Monitoring Program, University of New Hampshire",
   "Durham, New Hampshire",
-"Water quality monitoring of NH lakes, ponds, and tributaries",
+    "Water quality monitoring of NH lakes, ponds, and tributaries",
+  
 "Undergraduate Researcher",
 "2021",
 "Ecotoxicology Lab, University of New Hampshire",
 "Durham, New Hampshire",
-"Researching the effect of aersolized cyanotoxins"
+  "Researching the effect of aerosolized cyanotoxins"
 ) %>%
   detailed_entries(
     with = Position,
