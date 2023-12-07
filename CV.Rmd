@@ -1,6 +1,5 @@
 ---
-name: Alyssa
-surname: Daigle
+name: Alyssa Daigle
 position: "Master's Student"
 address: "Department of Molecular, Cellular, and Biomedical Sciences; University of New Hampshire"
 phone: 603 973 5565
