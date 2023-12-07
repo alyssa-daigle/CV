@@ -1,0 +1,126 @@
+---
+name: Alyssa
+surname: Daigle
+position: "Master's Student"
+address: "Department of Molecular, Cellular, and Biomedical Sciences; University of New Hampshire"
+phone: 603 973 5565
+www: insert web link
+email: "alyssa.daigle@unh.edu"
+github: alyssa-daigle
+linkedin: Alyssa Daigle
+headcolor: 414141
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(gsheet)
+sheet_url <- "https://docs.google.com/spreadsheets/d/1pBwj_E2oTeOA0wRmqS0nxHKdIJkeSI-4U3SxY4tMPng/edit?usp=sharing"
+```
+
+# Research Interests 
+
+Plant-microbe interactions: duckweed as a green manure, effect of co-occurring species on green manure quality; specific interest in effect of cyanotoxins on safety of green manure
+
+# Education 
+
+``` {r}
+tribble(
+  ~ Degree,
+  ~ Year,
+  ~ Institution,
+  ~ Location,
+  ~ Details,
+  "Master of Science, Microbiology",
+  "Expected 2025",
+  "University of New Hampshire",
+  "Durham, New Hampshire",
+"Advisor: Dr. Anna O'Brien",
+"Bachelor of Science, Environmental Conservation and Sustainability",
+"May 2023",
+"University of New Hampshire",
+"Durham, New Hampshire",
+"Summa Cum Laude"
+) %>%
+  detailed_entries(
+    what = Degree,
+    when = Year,
+    with = Institution,
+    where = Location,
+    why = Details
+  )
+```
+
+# Prior Research Experience
+
+```{r}
+tribble(
+  ~ Position,
+  ~ Year,
+  ~ Institution,
+  ~ Location,
+  ~ Details,
+  "Laboratory/Field Technician",
+  "2022-2023",
+  "Lakes Lay Monitoring Program, University of New Hampshire",
+  "Durham, New Hampshire",
+"Water quality monitoring of NH lakes, ponds, and tributaries",
+"Undergraduate Researcher",
+"2021",
+"Ecotoxicology Lab, University of New Hampshire",
+"Durham, New Hampshire",
+"Researching the effect of aersolized cyanotoxins"
+) %>%
+  detailed_entries(
+    with = Position,
+    when = Year,
+    what = Institution,
+    where = Location,
+    why = Details
+  )
+```
+
+# Presentations
+**Daigle, A.**, Dennehy, K., Haney, J., & McQuaid, A. (2022, April). Potential Drivers of Aerosolized Lake Toxins Impacting Public Health. Poster presented at Undergraduate Research Conference, University of New Hampshire.  
+ 
+
+# Teaching Experience
+``` {r}
+tribble(
+  ~ Position,
+  ~ Year,
+  ~ Institution,
+  ~ Location,
+  ~ Details,
+  "Germs 101 Teaching Assistant",
+  "Fall 2023",
+  "University of New Hampshire",
+  "Durham, New Hampshire",
+  "teaching assistant for class"
+) %>%
+  detailed_entries(
+    with = Position,
+    when = Year,
+    what = Institution,
+    where = Location,
+    why = Details
+  )
+```
+
+# Relevant Skills
+
+
+# Education 
+
+<!-- # ``` {r education} -->
+<!-- # Education <- gsheet::gsheet2tbl(sheet_url, sheet="Education") %>% -->
+<!-- #   vitae::detailed_entries(what = Degree, -->
+<!-- #                           when = Year, -->
+<!-- #                           with = Institution,  -->
+<!-- #                           where = Location,  -->
+<!-- #                           why = Details) -->
+<!-- #  -->
